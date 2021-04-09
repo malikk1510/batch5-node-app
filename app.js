@@ -36,6 +36,9 @@ app.use(cors());
 
 app.use(bodyParser.json());
 
+app.get("/", (req,res)=>{
+  res.send("You are good to go!")
+})
 //routes
 app.use(taskRoutes);
 app.use(userRoutes);
